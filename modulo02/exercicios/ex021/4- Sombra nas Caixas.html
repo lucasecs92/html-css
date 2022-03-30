@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sombras</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: gray;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: rgb(117, 115, 115);
+            padding: 3px;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.685); /* deslocamento horizontal e vertical, espalhamento e sombra */
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px; /* espaçamento entre os links */
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article > aside { /* aside filho do article */
+            background-color: rgb(129, 129, 129);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header> <!-- cabeçalho -->  
+        <h1>Meu site</h1>
+        <nav> <!-- menu de navegação -->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main> <!-- conteúdo principal -->
+        <section id="assuntos"> <!-- serve como seções dentro do meu site -->
+            <p>Esportes Política Tecnologia</p>
+        </section>
+        <section id="notícias">
+            <article> <!-- incluir e destacar um artigo -->
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime explicabo laboriosam voluptate dolores soluta pariatur suscipit dolorem porro voluptas. At velit inventore sunt beatae quas dolores explicabo perferendis itaque sed.</p>
+                <aside> <!-- conteúdo periférico relativo ao artigo -->
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+                
+            </article>
+        </section>
+    </main>
+    <footer> <!-- rodapé -->
+        <p>Desenvolvido pelo CursoemVídeo</p>
+    </footer>
+</body>
+</html>

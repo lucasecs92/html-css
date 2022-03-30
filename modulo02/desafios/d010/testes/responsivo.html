@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        main {
+            background-color: white;
+            padding: 20px; /* para dar uma afastada entre o conteúdo e o main */
+            border-radius: 10px; /* arredondando a borda */
+
+            /* propriedades responsivas */
+            min-width: 250px;  /* largura maxima de uma tela de celular */
+            max-width: 800px;
+            margin: auto; /* alinhando o conteúdo ao centro da tela*/
+        }
+
+        img {
+            width: 100%; /* adaptando imagem ao tamanho da tela */
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore expedita iure porro laboriosam corrupti error est laborum, beatae voluptatum repellendus cum obcaecati voluptatem necessitatibus quo tenetur asperiores perspiciatis libero dolor?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, voluptates distinctio vel deserunt nisi illo, eaque officia inventore doloremque itaque delectus corporis voluptatibus? Saepe ab eius eligendi. Tempore, temporibus corporis.</p>
+        <picture>
+            <source media="(max-width: 600px)" srcset="midia/imagens/irina-blok-pq.jpg"> <!-- quando chegar na resolução 600px ele carrega essa imagem do srcset -->
+            <img src="midia/imagens/irina-blok.jpg" alt="Irina Block">
+        </picture>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore expedita iure porro laboriosam corrupti error est laborum, beatae voluptatum repellendus cum obcaecati voluptatem necessitatibus quo tenetur asperiores perspiciatis libero dolor?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, voluptates distinctio vel deserunt nisi illo, eaque officia inventore doloremque itaque delectus corporis voluptatibus? Saepe ab eius eligendi. Tempore, temporibus corporis.</p>
+    </main>
+</body>
+</html>

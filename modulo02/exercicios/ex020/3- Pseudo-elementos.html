@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a { /* configuração genérica do link */
+            color: red; /* mudar a cor, para quando for visitado ou não.. so aparece no começo da criação */
+            text-decoration: none; /* para retirar o sublinhado dos links */
+            font-weight: bold; /* links em negrito */
+        }
+
+        a:visited { /* config para diferenciar que visitei em algum momento, personalizando o link da página */
+            color: purple;
+        }
+
+        a:hover { /* configuração de quando eu passar o mouse por cima */
+            color: black; /* muda a cor do link quando arrastar o mouse por cima */
+            text-decoration: underline; /* para mostrar sublinhado quando arrastar o mouse por cima */
+        }
+
+        a:active { /* mudança de estado do link no momento que está sendo clicado */
+            color: yellow; /* muda a cor do link quando eu clicar em cima */
+        }
+        
+        a::after { /* pseudo-elemento */
+            /* para que todo link tenha no final uma indicação que seja um link ou outro conteúdo específico */
+            /* para fazer coisas aparecerem antes e depois na periferia */
+            content: ' [link]'; /* conteúdo */
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgrey;
+        }
+    </style> 
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li>
+            <a href="https://gustavoguanabara.github.io" target="_blank">Repositório GitHub</a>
+        </li>
+        <li>
+            <a href="https://www.youtube.com/c/CursoemV%C3%ADdeo" target="_blank">Canal do YouTube</a>
+        </li>
+        <li>
+            <a href="https://www.cursoemvideo.com" target="_blank">Site do Curso em Vídeo</a>
+        </li>
+    </ul>
+</body>
+</html>

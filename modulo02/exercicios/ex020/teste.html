@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTE</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: red;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: blue;
+        }
+
+        a:hover {
+            color: black;
+        }
+
+        a:active {
+            color: yellow;
+        }
+
+        .destaque {
+            background-color: burlywood;
+        }
+
+        .destaque::before {
+            content: '> ';
+        }
+
+        .destaque::after {
+            content: ' <';
+        }
+     
+        section {
+            display: inline-block;
+            background-color: lightblue;
+            border: 1px solid black;
+            height: 200px;
+            width: 200px;
+            text-align: center;
+        }
+
+        #box01:hover {
+            background-color: blueviolet;
+        }
+        #box01:active {
+            background-color: red;
+        }
+  
+        #box02:hover {
+            background-color: yellowgreen;
+        }
+        #box03:hover {
+            background-color: goldenrod;
+        }
+    </style>
+</head>
+<body>
+    <h1>Links Especiais</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io/" target="_blank" class="destaque">Repositório GitHub</a></li>
+        <li><a href="https://www.youtube.com/c/CursoemV%C3%ADdeo" target="_blank">Canal no YouTube</a></li>
+        <li><a href="https://www.cursoemvideo.com/" target="_blank">Site do Curso em Vídeo</a></li>
+    </ul>
+
+    <section id="box01">01</section>
+    <section id="box02">02</section>
+    <section id="box03">03</section>
+    
+</body>
+</html>
