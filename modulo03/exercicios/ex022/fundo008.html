@@ -8,7 +8,7 @@
     <style>
         #container {
             position: relative; /* todo posicionamento de um box é relative por padrão, é usado pelo container que está de fora do conteúdo */
-            height: 500px;
+            height: 95vh; /* altura do viewport */
             background-color: purple;
             padding: 10px;
             background-image: url('imagens/target001.png');
@@ -25,6 +25,8 @@
 
             left: 50%;
             top: 50%;
+
+            transform: translate(-50%, -50%) /* -50% para esquerda e -50% para cima, centralizando na vertical e horizontal e deixando responsivo */
         }
     </style>
 </head>
