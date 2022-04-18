@@ -34,7 +34,9 @@
 
         td.num {
             text-align: right;
+            width: 140px; /* ajustando a largura da coluna população */
         }
+
     </style>
 </head>
 <body>
@@ -54,8 +56,9 @@
         <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População (2021)</th>
+                <th scope="col">Estado</th> 
+                <th scope="col">População (2021)</th>
+                <!-- deixando claro para o html que um título está na mesma COLUNA que um dado -->
             </tr>
         </thead>
         <tbody>
@@ -170,7 +173,8 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
+                <!-- deixando claro para o html que um título está na mesma LINHA que um dado -->
                 <td class="num"><strong>213.317.639</strong></td>
             </tr>
         </tfoot>
