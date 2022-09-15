@@ -13,31 +13,31 @@ html {
 }
 
 header {
-    background-color: rgb(172, 170, 170);
+  background-color: rgb(172, 170, 170);
 }
 
 header > h1 {
-    text-align: center;
+  text-align: center;
 }
 
 menu ul {
-    list-style-type: none;
-    background-color: rgba(128, 128, 128, 0.767);
+  list-style-type: none;
+  background-color: rgba(128, 128, 128, 0.767);
 }
 
 menu li {
-    display: inline-block;
-    background-color: rgb(58, 58, 58);
-    color: white;
-    padding: 10px;
+  display: inline-block;
+  background-color: rgb(58, 58, 58);
+  color: white;
+  padding: 10px;
 }
 
 article {
-    display: block;
-    margin: auto;
-    width: 600px;
+  display: block;
+  margin: auto;
+  width: 600px;
 }
 
 article > h2 {
-   text-align: center; 
+  text-align: center;
 }

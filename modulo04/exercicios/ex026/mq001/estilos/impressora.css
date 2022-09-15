@@ -14,15 +14,15 @@ html {
 }
 
 menu {
-    display: none; /* tira o menu list quando for imprimir */
+  display: none; /* tira o menu list quando for imprimir */
 }
 
 article {
-    width: 100%;
+  width: 100%;
 }
 
 article::after {
-    content: 'Esse artigo foi impresso através do site www.cursoemvideo.com';
-    font-weight: bold;
-    color: rgba(92, 92, 221, 0.884);
+  content: "Esse artigo foi impresso através do site www.cursoemvideo.com";
+  font-weight: bold;
+  color: rgba(92, 92, 221, 0.884);
 }
