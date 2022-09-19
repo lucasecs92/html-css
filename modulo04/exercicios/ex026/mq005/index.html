@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu responsivo</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilo/style.css">
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
-        <menu>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -24,11 +26,21 @@
         <article>
             <h2>Testando Media Queries</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero nulla sunt fuga architecto, dolore minus quia officia iure ad consectetur veritatis numquam suscipit, accusantium vitae quo! Voluptas labore a enim esse repellat incidunt nemo amet, excepturi atque eligendi illum praesentium nihil sequi! Sapiente laborum, dolores doloribus nostrum exercitationem aperiam recusandae repudiandae possimus vel illum. Beatae iste iure deserunt labore placeat ducimus ipsa perspiciatis, quos delectus, architecto excepturi nemo reprehenderit veniam obcaecati, eaque suscipit repellendus. Aut eligendi maxime, possimus, nam facere minima repellendus animi, deleniti odit reiciendis optio expedita neque sint!</p>
-
+            
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi dicta animi debitis velit sit. Incidunt odio, quasi exercitationem maxime distinctio alias, debitis dolor impedit ipsum dolorem recusandae rerum. Harum nam culpa corrupti obcaecati eaque repudiandae eos dolores omnis rerum sit eius fuga pariatur soluta ipsam, itaque maiores molestiae voluptate quisquam dicta dolore quidem dolorum officiis sapiente nesciunt. Voluptas vitae quaerat aliquam aliquid exercitationem facilis tenetur vero sequi praesentium debitis? Dolorem, molestias? Voluptas, omnis! Consequatur temporibus voluptatem quam cum possimus, commodi placeat perferendis. Repellat delectus accusamus, aperiam nihil quae nulla? Quos?</p>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, fugit maiores! Fugit quos, totam minus, nostrum eius delectus neque maxime fuga voluptas ad esse praesentium! Excepturi soluta repellendus ullam, aliquam eius quod! Dolorem quidem excepturi mollitia, quos aliquam magnam consequuntur quia. Odio maxime expedita libero similique quidem, delectus voluptate amet cupiditate, dolor, voluptates natus. Unde deleniti recusandae voluptate nobis dolor consequatur enim repellendus rerum voluptatem sed. Ullam maiores adipisci inventore cupiditate rerum beatae repellendus ab velit, deleniti natus rem consectetur eaque maxime, optio voluptas possimus obcaecati debitis facilis deserunt accusamus cumque ipsum molestias impedit. Sunt laboriosam voluptatem illo necessitatibus ad.</p>
         </article>
     </main>
+    <script>
+        // script p quando clicar no menu hamburguer e aparecer lista         
+        function clickMenu() {  
+           if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+           } else {
+                itens.style.display = 'block'
+           }
+        }
+    </script>
 </body>
 </html>
