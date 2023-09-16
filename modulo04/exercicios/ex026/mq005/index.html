@@ -13,12 +13,8 @@
     <header>
         <h1>Meu Site</h1>
 
-        <span 
-            id="burguer" 
-            class="material-icons" 
-            onclick="clickMenu()"> menu
-        </span>
-        <menu id="itens">
+        <span class="material-icons" id="burguer" onclick="clickMenu()">menu</span>
+        <menu id="itens">   
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -48,7 +44,7 @@
            }
         }
 
-        // config feita p Erro quando for encolher p tela menor enquanto clico no menu hamburguer e a lista sumia quando aumentava
+        // config feita p Erro, quando a tela estiver encolhida os items da lista somem quando aumentava p tela grande. 
         function mudouTamanho() {
            if (window.innerWidth >= 768) { 
                 itens.style.display = 'block'
